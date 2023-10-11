@@ -32,3 +32,14 @@ void UPickUp::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponen
 	// ...
 }
 
+/*TSubclassOf<class AActor> UPickUp::GetClassFromIngredient(EIngredient ingredient) {
+	switch (ingredient) {
+		case EIngredient::None:
+			return NULL;
+		case EIngredient::Cauldron:
+			return NULL;
+		case EIngredient::NewtEye:
+			return NULL;
+	}
+	return NULL;
+}*/

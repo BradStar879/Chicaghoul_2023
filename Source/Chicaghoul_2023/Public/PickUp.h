@@ -23,12 +23,15 @@ protected:
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Enum Switch")
+	//TSubclassOf<class AActor> GetClassFromIngredient(EIngredient ingredient);
 
 		
 };
 
 UENUM(BlueprintType)
 enum class EIngredient : uint8 {
+	None			UMETA(DisplayName = "None"),
 	Cauldron		UMETA(DisplayName = "Cauldron"),
 	Pumpkin			UMETA(DisplayName = "Pumpkin"),
 	Flask			UMETA(DisplayName = "Flask"),
